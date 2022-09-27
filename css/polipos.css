@@ -1,0 +1,334 @@
+/* POLIPOS-HOME */
+.polipos-home {
+    min-height: 100vh;
+    background-image: url('../imagenes/img-home.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nova Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    height: 100vh;
+    width: 100%;
+
+}
+
+/* media polipos-home */
+@media(max-width:940px) {
+
+    /* header */
+    .polipos-home {
+        display: block;
+    }
+
+    #dates {
+        flex-direction: column;
+
+
+    }
+
+
+
+
+
+
+}
+
+
+
+
+/* DATES */
+#dates {
+    padding: 50PX 50PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+}
+
+
+H4,
+.fa-brands {
+    color: white;
+}
+
+#dates div {
+    padding: 30px 30px;
+}
+
+#dates div h4 {
+    color: black;
+}
+
+
+
+/*  BUTTONS  */
+
+.button {
+    background-color: #fff;
+    border-radius: 0;
+    border: 2px solid rgba(0, 0, 0, .7);
+    color: #000;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 6px 32px;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: all .3s ease;
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    margin: 3rem;
+}
+
+.button-1 {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.button:hover {
+    background-color: #000;
+    color: white;
+}
+
+/* POLIPOS ON INSTAGRAM*/
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nova Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.text-head {
+    text-align: center;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #282c34;
+    font-size: 3rem;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #03afff;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+
+@media (min-width: 600px) {
+    .wide {
+        grid-column: span 2;
+    }
+
+    .tall {
+        grid-row: span 2;
+    }
+}
+
+/* FOOTER */
+
+.pie-pagina {
+    width: 100%;
+    background-color: black;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+
+/* media-css */
+
+.imagen {
+    width: 100%;
+}
+
+.imagen img {
+    width: 100%;
+}
+
+.galeria {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+@media (min-width:100px) {
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width:520px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:728px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width:1024px) {
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media(max-width:1236px) {
+
+    /* header */
+    .polipos-home {
+        display: block;
+    }
+
+    #dates {
+        flex-direction: column;
+
+
+    }
+
+
+
+
+
+
+}
+
+/* news css */
+.flex-container {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+}
+
+.caja {
+    width: 25%;
+    justify-content: center
+}
+
+
+/* CSS MUSIC */
+
+.d-grid {
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+
+
+
+}
+
+.btn-primary {
+    height: 6rem;
+}
