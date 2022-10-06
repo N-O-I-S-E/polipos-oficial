@@ -1,0 +1,648 @@
+// hojas parciales
+
+@import "utilities/variables";
+@import "utilities/mixin";
+
+
+//polipos-home
+.polipos-home {
+    min-height: 100vh;
+    background-image: $polipos-home-image;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nova Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    height: 100vh;
+    width: 100%;
+
+
+    h4 {
+        color: white;
+    }
+
+    .nav-link {
+
+
+
+
+
+        .fa-octopus-deploy {
+            color: white;
+        }
+    }
+
+
+
+}
+
+// dates
+
+#dates {
+    padding: 50PX 50PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+}
+
+
+H4,
+.fa-brands {
+    color: white;
+}
+
+#dates div {
+    padding: 30px 30px;
+}
+
+#dates div h4 {
+    color: black;
+}
+
+
+.button {
+    @include buttom1;
+
+}
+
+.button-1 {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.button:hover {
+    background-color: #000;
+    color: white;
+}
+
+// polipos on instagaram
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nova Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.text-head {
+    text-align: center;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #282c34;
+    font-size: 3rem;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #03afff;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+
+
+//videos
+
+.youtube-wrapper{
+    width: 70%;
+    margin: auto;
+    .video-youtube{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        height: 0px;
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+    
+    .video-youtube iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// footer
+
+.pie-pagina {
+    width: 100%;
+    background-color: black;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+// media
+@media(max-width:940px) {
+
+    /* header */
+    .nav-link {
+        width: 80px;
+    }
+
+    .polipos-home {
+        display: block;
+    }
+
+    #dates {
+        flex-direction: column;
+
+
+    }
+
+}
+
+@media (min-width: 600px) {
+    .wide {
+        grid-column: span 2;
+    }
+
+    .tall {
+        grid-row: span 2;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+
+@media (min-width:520px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:728px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width:1024px) {
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media(max-width:1236px) {
+
+    /* header */
+    .polipos-home {
+        display: block;
+    }
+
+    #dates {
+        flex-direction: column;
+
+
+    }
+
+}
+
+.imagen {
+    width: 100%;
+}
+
+.imagen img {
+    width: 100%;
+}
+
+.galeria {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+@media (min-width:100px) {
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width:520px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:728px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width:1024px) {
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media(max-width:1236px) {
+
+    /* header */
+    .polipos-home {
+        display: block;
+    }
+
+    #dates {
+        flex-direction: column;
+
+
+    }
+
+
+
+
+
+
+}
+
+/* news css */
+.flex-container {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+}
+
+.caja {
+    width: 25%;
+    justify-content: center
+}
+
+
+//music-css
+
+.imagen {
+    width: 100%;
+}
+
+.imagen img {
+    width: 100%;
+}
+
+.galeria {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+@media (min-width:100px) {
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width:520px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:728px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width:1024px) {
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media(max-width:1236px) {
+
+    /* header */
+    .polipos-home {
+        display: block;
+    }
+
+    #dates {
+        flex-direction: column;
+
+
+    }
+
+
+
+
+
+
+}
+
+/* news css */
+.flex-container {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+}
+
+.caja {
+    width: 25%;
+    justify-content: center
+}
+
+
+/* CSS MUSIC */
+
+.imagen {
+    width: 100%;
+}
+
+.imagen img {
+    width: 100%;
+}
+
+.galeria {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+@media (min-width:100px) {
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width:520px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:728px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width:1024px) {
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media(max-width:1236px) {
+
+    /* header */
+    .polipos-home {
+        display: block;
+    }
+
+    #dates {
+        flex-direction: column;
+
+
+    }
+
+
+
+
+
+
+}
+
+//new css
+.flex-container {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+}
+
+.caja {
+    width: 25%;
+    justify-content: center
+}
+
+
+//css music
+
+.spotify{
+    border: 10px solid $color-spotify;
+    border-radius: 25px;
+    background-color: $color-spotify;
+    text-align: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    color: black;
+    text-decoration: none;
+    height: 16vh;
+    margin: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nova Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    p{
+        font-size: 2rem;
+        
+        
+   
+    }
+
+}
+
+.soundcloud{
+    border: 10px solid $color-soundcloud;
+    border-radius: 25px;
+    background-color: $color-soundcloud;
+    text-align: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    color: white ;
+    text-decoration: none;
+    height: 16vh;
+    margin: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nova Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    p{
+        font-size: 2rem;
+        
+        
+   
+    }
+}
+
+.prime-music{
+    border: 10px solid $color-prime-music;
+    border-radius: 25px;
+    background-color: $color-prime-music;
+    text-align: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    height: 16vh;
+    margin: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nova Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    p{
+        font-size: 2rem;
+        
+        
+   
+    }
+}
+
+.apple-music{
+    border: 10px solid $apple-music-color;
+    border-radius: 25px;
+    background-color: $apple-music-color;
+    text-align: center;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    color: black;
+    text-decoration: none;
+    height: 16vh;
+    margin: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nova Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    p{
+        font-size: 2rem;
+        
+        
+   
+    }
+    .fa-brands{
+        color: black;
+    }
+}
